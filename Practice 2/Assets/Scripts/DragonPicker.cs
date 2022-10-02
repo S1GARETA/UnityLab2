@@ -17,10 +17,4 @@ public class DragonPicker : MonoBehaviour
             tShieldGo.transform.localScale = new Vector3(1*i, 1*i, 1*i);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

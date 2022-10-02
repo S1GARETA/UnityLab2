@@ -9,6 +9,7 @@ public class EnemyDragon : MonoBehaviour
     [SerializeField] private float timeBetweenEggDrops = 1f;
     [SerializeField] private float leftRightDistance = 10f;
     [SerializeField] private float chanceDirection = 0.1f;
+    
     void Start()
     {
         Invoke("DropEgg", 2f);
@@ -21,6 +22,7 @@ public class EnemyDragon : MonoBehaviour
         egg.transform.position = transform.position + myVector;
         Invoke("DropEgg", timeBetweenEggDrops);
     }
+
     void Update()
     {
         Vector3 pos = transform.position;

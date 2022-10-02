@@ -5,11 +5,6 @@ using UnityEngine;
 public class DragonEgg : MonoBehaviour
 {
     [SerializeField] private static float bottomY = -30;
-    void Start()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         ParticleSystem ps = GetComponent<ParticleSystem>();
